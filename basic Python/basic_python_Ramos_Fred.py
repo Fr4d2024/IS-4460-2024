@@ -1,3 +1,7 @@
+#This is a line for a comment 
+print('StormTrooper')
+print(5.5)
+
 print("Hello World!")
 
 a = 5
@@ -18,6 +22,9 @@ print("My name is " + user_name + " actually!")
 print(f"My name is {user_name} actually!")
 
 name = "Jake"
+
+number = 124345 * 6754390
+print(str(number)[1:6])
 
 def add_numbers(a,b):
   print(a+b)
