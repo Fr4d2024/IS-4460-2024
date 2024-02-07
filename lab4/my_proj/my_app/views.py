@@ -7,7 +7,7 @@ def title_name(the_name: str):
 class HomePageView(View):
     def get(self, request):
      
-        my_name = "FRED"
+        my_name = "FREDDSTER"
 
         new_name = title_name(my_name)
 
