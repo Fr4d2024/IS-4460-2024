@@ -1,25 +1,28 @@
 <html>
 <body>
     {{ hi }}
-
-    {{ name }}
 <br>
+original name is {{origi_name}}
+the title name is {{ name }}
+<br>
+<ul>
     {% for name in names_list %}
-    {{ name }},
+    <li>{{ name }}</li>
     {% endfor %}
-
-
-    {{ names_list.1 }}
-
+</ul>
+<br>
+the second name is {{ names_list.1 }}
 <p>
 Below is cars information
 </p>
 <p>
-The color of car1 is: {{car1.color}}
+The color of car1 is: {{car1.color}}, makes sound: {{car1.sound}}, and has wheels= {{car1.wheels}}
 <br>
-The make of car2 is {{car2.make}}
-
-The make of car1 is 
+The make of car2 is {{car2.make}}, makes sound: {{car2.sound}}, and has wheels= {{car2.wheels}}
+<br>
+Motorcycle make: {{ bike1.make}}, makes the sound: {{bike1.sound}}, and color: {{bike1.color}}
+<br>
+The make of car1 is {{car1.make}}
 </p>
 </body>
 </html>
