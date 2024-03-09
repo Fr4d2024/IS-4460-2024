@@ -1,5 +1,6 @@
 from django.db import models
 
 class Movies(models.Model):
-    name = models.CharField(max_length=100)
+    movie_id = models.int
+    description = models.CharField(max_length=300)
 # Create your models here.
