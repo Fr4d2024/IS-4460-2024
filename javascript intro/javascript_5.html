@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <lable>
+        <input type="text" id="numberInput" onkeyup="validateInput();" /> OrderID (only integers)
+    </lable>
+    <p id="warning" style="color:red;"></p>
+
+    <script>
+        function validateInput() {
+            const inputElement = document.getElementById('numberInput');
+            const warningElement = document.getElementById('warning');
+
+            const nonNumberRegex = /\W\s/g;
+
+            if (nonNumberRegex.test(inputElement.value)) {
+                inputElement.value = inputElement.value.replace(nonNumberRegex, '');
+
+                warningElement.textContent = "Only numbers allowed!";
+            } else {
+                warningElement.textContent = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
