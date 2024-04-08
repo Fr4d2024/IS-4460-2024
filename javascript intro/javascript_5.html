@@ -12,7 +12,7 @@
             const inputElement = document.getElementById('numberInput');
             const warningElement = document.getElementById('warning');
 
-            const nonNumberRegex = /\W\s/g;
+            const nonNumberRegex = /\D/g;
 
             if (nonNumberRegex.test(inputElement.value)) {
                 inputElement.value = inputElement.value.replace(nonNumberRegex, '');

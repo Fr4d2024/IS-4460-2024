@@ -1,0 +1,19 @@
+<html>
+<body>
+    <main>
+        <ul>
+            {% for post in posts %}
+            <li>
+                {{ post.title }} - <span id="like-count-{{post.id}}">{{ post.likes }} </span> likes.
+                <button class="like-button" data-postid="{{ post.id }}">Like</button>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+
+    <script>
+
+        
+    </script>
+</body>
+</html>
